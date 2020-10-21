@@ -1,5 +1,6 @@
 import React from 'react';
 import Context from '../Context';
+import PropTypes from 'prop-types';
 
 export default class addFolder extends React.Component {
   static contextType = Context;
@@ -41,4 +42,8 @@ export default class addFolder extends React.Component {
       </section>
     )
   }
+}
+
+addFolder.propTypes = { 
+  store: PropTypes.object.isRequired
 }

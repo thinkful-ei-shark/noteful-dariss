@@ -1,5 +1,6 @@
 import React from 'react'
 import Context from '../Context'
+import PropTypes from 'prop-types';
 export default class addNote extends React.Component {
 
   static contextType = Context;
@@ -107,4 +108,8 @@ export default class addNote extends React.Component {
       </section>
     )
   }
+}
+
+addNote.propTypes = { 
+  store: PropTypes.object.isRequired
 }
