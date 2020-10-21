@@ -1,7 +1,7 @@
 import React from 'react';
 import Context from '../Context';
 
-export default class AddFolderMain extends React.Component {
+export default class addFolder extends React.Component {
   static contextType = Context;
 
   state = {
@@ -21,7 +21,7 @@ export default class AddFolderMain extends React.Component {
 
   render() {
     return(
-      <section className='AddFolderMain'>
+      <section className='addFolder'>
         <h2>Compose Folder</h2>
         <form onSubmit={(e) =>{
           this.context.createFolder(e, this.state);

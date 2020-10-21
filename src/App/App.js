@@ -5,8 +5,8 @@ import NoteListNav from "../NoteListNav/NoteListNav";
 import NotePageNav from "../NotePageNav/NotePageNav";
 import NoteListMain from "../NoteListMain/NoteListMain";
 import NotePageMain from "../NotePageMain/NotePageMain";
-import AddNoteMain from "../AddNoteMain/AddNoteMain";
-import AddFolderMain from '../AddFolderMain/AddFolderMain.js';
+import addNote from "../addNote/addNote";
+import addFolder from '../addFolder/addFolder.js';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import cuid from 'cuid';
 
@@ -124,8 +124,8 @@ class App extends Component {
           <Route exact key={path} path={path} component={NoteListMain} />
         ))}
         <Route path="/note/:noteId" component={NotePageMain} />
-        <Route path="/add-note" component={AddNoteMain} />
-        <Route path='/add-folder' component={AddFolderMain} />
+        <Route path="/add-note" component={addNote} />
+        <Route path='/add-folder' component={addFolder} />
       </>
     );
   }
